@@ -1,0 +1,133 @@
+{
+   "DataNascimentoPortadorInvalida": { 
+      "installmentCount":2,
+      "fundingInstrument":{ 
+         "method":"CREDIT_CARD",
+         "creditCard":{ 
+            "expirationMonth":12,
+            "expirationYear":25,
+            "number":"5555666677778884",
+            "cvc":"123",
+            "holder":{ 
+               "fullname":"João Portador da Silva",
+               "birthdate":"0000",
+               "taxDocument":{ 
+                  "type":"CPF",
+                  "number":"12345679891"
+               },
+               "phone":{ 
+                  "countryCode":"55",
+                  "areaCode":"11",
+                  "number":"66778899"
+               }
+            }
+         }
+      }
+   },
+ 
+   "CPFInvalido": { 
+      "installmentCount":2,
+      "fundingInstrument":{ 
+         "method":"CREDIT_CARD",
+         "creditCard":{ 
+            "expirationMonth":12,
+            "expirationYear":25,
+            "number":"5555666677778884",
+            "cvc":"123",
+            "holder":{ 
+               "fullname":"João Portador da Silva",
+               "birthdate":"1988-12-30",
+               "taxDocument":{ 
+                  "type":"CPF",
+                  "number":"1234567989"
+               },
+               "phone":{ 
+                  "countryCode":"55",
+                  "areaCode":"11",
+                  "number":"66778899"
+               }
+            }
+         }
+      }
+   },
+ 
+   "NumeroDeCartaoInvalido": { 
+      "installmentCount":2,
+      "fundingInstrument":{ 
+         "method":"CREDIT_CARD",
+         "creditCard":{ 
+            "expirationMonth":12,
+            "expirationYear":25,
+            "number":"",
+            "cvc":"123",
+            "holder":{ 
+               "fullname":"João Portador da Silva",
+               "birthdate":"1988-12-30",
+               "taxDocument":{ 
+                  "type":"CPF",
+                  "number":"12345679891"
+               },
+               "phone":{ 
+                  "countryCode":"55",
+                  "areaCode":"11",
+                  "number":"66778899"
+               }
+            }
+         }
+      }
+   },
+
+   "DataDeExpiracaoInvalida": { 
+      "installmentCount":2,
+      "fundingInstrument":{ 
+         "method":"CREDIT_CARD",
+         "creditCard":{ 
+            "expirationMonth":12,
+            "expirationYear":19,
+            "number":"5555666677778884",
+            "cvc":"123",
+            "holder":{ 
+               "fullname":"João Portador da Silva",
+               "birthdate":"1988-12-30",
+               "taxDocument":{ 
+                  "type":"CPF",
+                  "number":"12345679891"
+               },
+               "phone":{ 
+                  "countryCode":"55",
+                  "areaCode":"11",
+                  "number":"66778899"
+               }
+            }
+         }
+      }
+   },
+
+   "CodigoDeSegurancaNaoInformado": { 
+      "installmentCount":2,
+      "fundingInstrument":{ 
+         "method":"CREDIT_CARD",
+         "creditCard":{ 
+            "expirationMonth":12,
+            "expirationYear":25,
+            "number":"5555666677778884",
+            "holder":{ 
+               "fullname":"João Portador da Silva",
+               "birthdate":"1988-12-30",
+               "taxDocument":{ 
+                  "type":"CPF",
+                  "number":"12345679891"
+               },
+               "phone":{ 
+                  "countryCode":"55",
+                  "areaCode":"11",
+                  "number":"66778899"
+               }
+            }
+         }
+      }
+   }
+
+
+
+}
