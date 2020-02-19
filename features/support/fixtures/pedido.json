@@ -1,4 +1,20 @@
 {
+  "pedidoCompleto": {
+    "ownId": "123abc",
+    "items": [
+      {
+        "product": "Box de Seriado - Exterminate!",
+        "quantity": 1,
+        "detail": "Box de seriado com 8 dvds",
+        "price": 7300
+      }
+    ],
+    "customer": {
+      "ownId": "cliente_xyz",
+      "fullname": "João Silva",
+      "email": "joaosilva@email.com"
+    }
+  },
   "SemOwnId": {
     "ownId": "",
     "items": [
@@ -15,7 +31,6 @@
       "email": "joaosilva@email.com"
     }
   },
-
   "ComOwnIdMaisQue45Caracteres": {
       "ownId": "gjewigje812481weoijgoeijgeoiwj921482194214124214",
       "items": [
@@ -32,7 +47,6 @@
       "email": "joaosilva@email.com"
       }
   },
-
   "SemItem": {
       "ownId": "Pedido4443",
       "customer": {
@@ -41,7 +55,6 @@
       "email": "joaosilva@email.com"
       }
   },
-
   "SemNomeDoProduto": {
         "ownId": "pedidoSemNome",
         "items": [
@@ -57,7 +70,6 @@
         "email": "joaosilva@email.com"
         }
     },
-
     "SemValorNoItem": {
       "ownId": "pedidoSemNome",
       "items": [
