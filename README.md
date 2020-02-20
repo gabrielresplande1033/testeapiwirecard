@@ -1,3 +1,7 @@
+# Objetivo
+Esse projeto tem como principal objetivo a avaliação do processo seletivo da Wirecard para a vaga de Analista de Testes / Qualidade de software.
+Os testes automatizados foram escritos utilizando o Cucumber, facilitando o entendimento dos cenários abordados na automação.
+
 # Tecnologias utilizadas
 - [Ruby](https://www.ruby-lang.org/pt/)
 - [Cucumber](https://cucumber.io/)
@@ -39,9 +43,5 @@ Realizando alguns testes manuais na [aplicação web](https://conta-sandbox.wire
 exemplo o **input** da busca de pedidos, cujo id é apenas a letra **"q"**, isso dificulta na criação de testes automatizados para interface
 ![Screenshot_20200220_044730](https://user-images.githubusercontent.com/32210024/74916424-36589500-539c-11ea-93b9-d93b490a7ac9.png)
 
-
-# Considerações finais
-Esse projeto tem como principal objetivo a avaliação do processo seletivo da Wirecard para a vaga de Analista de Testes / Qualidade de software.
-Os testes automatizados foram escritos utilizando o Cucumber, facilitando o entendimento dos cenários abordados na automação.
 
 
