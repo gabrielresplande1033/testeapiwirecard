@@ -1,3 +1,7 @@
+# Objetivo
+Esse projeto tem como principal objetivo a avaliação do processo seletivo da Wirecard para a vaga de Analista de Testes / Qualidade de software.
+Os testes automatizados foram escritos utilizando o Cucumber, facilitando o entendimento dos cenários abordados na automação.
+
 # Tecnologias utilizadas
 - [Ruby](https://www.ruby-lang.org/pt/)
 - [Cucumber](https://cucumber.io/)
@@ -10,14 +14,22 @@
 - Automação de testes de interface do ambiente de testes referente à pedidos
 
 # Como executar os testes da API
-Para executar os testes da API deve-se possuir instalado o **Ruby(2.4.0)**, **Bundle(2.1.4)**, clonar o projeto e executar os seguintes comandos dentro da pasta "api/"
+Para executar os testes da API deve-se possuir instalado o **Ruby**, **Bundle**, clonar o projeto e executar os seguintes comandos dentro da pasta "api/"
 - *bundle install*
 - *cucumber -t @pedido* (para executar os testes referente aos endpoints de pedidos)
 - *cucumber -t @pagamento* (para executar os testes referente aos endpoints de pagamentos)
 - *cucumber* (para executar testes tanto de pedidos, quanto de pagamentos)
 
+# ChromeDriver
+- Para rodar os testes de interface, é necessário possuir o ChromeDriver.
+- Verifique a versão do chrome [aqui](https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
+- Baixe a versão do ChromeDriver compatível com o seu navegador [aqui](https://chromedriver.storage.googleapis.com/index.html)
+- Por fim, mova o ChromeDriver para o diretório correto:
+- *sudo mv chromedriver /usr/local/bin* 
+
 # Como executar os testes de Interface
-Para executar os testes de Interface deve-se possuir instalado o **Ruby(2.4.0)**, **Bundle(2.1.4)**, [chromedriver](https://chromedriver.chromium.org/downloads), clonar o projeto e executar os seguintes comandos dentro da pasta "interface/"
+
+Para executar os testes de Interface deve-se possuir instalado o **Ruby**, **Bundle**, **ChromeDriver**, clonar o projeto e executar os seguintes comandos dentro da pasta "interface/"
 - *bundle install*
 - *cucumber -t @buscarpedido* (para executar os testes referente a busca de pedidos)
 - *cucumber -t @loginFail* (para executar os testes referente as falhas de login)
@@ -39,9 +51,5 @@ Realizando alguns testes manuais na [aplicação web](https://conta-sandbox.wire
 exemplo o **input** da busca de pedidos, cujo id é apenas a letra **"q"**, isso dificulta na criação de testes automatizados para interface
 ![Screenshot_20200220_044730](https://user-images.githubusercontent.com/32210024/74916424-36589500-539c-11ea-93b9-d93b490a7ac9.png)
 
-
-# Considerações finais
-Esse projeto tem como principal objetivo a avaliação do processo seletivo da Wirecard para a vaga de Analista de Testes / Qualidade de software.
-Os testes automatizados foram escritos utilizando o Cucumber, facilitando o entendimento dos cenários abordados na automação.
 
 
