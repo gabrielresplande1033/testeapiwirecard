@@ -14,7 +14,7 @@ Os testes automatizados foram escritos utilizando o Cucumber, facilitando o ente
 - Automação de testes de interface do ambiente de testes referente à pedidos
 
 # Como executar os testes da API
-Para executar os testes da API deve-se possuir instalado o **Ruby(2.4.0)**, **Bundle(2.1.4)**, clonar o projeto e executar os seguintes comandos dentro da pasta "api/"
+Para executar os testes da API deve-se possuir instalado o **Ruby**, **Bundle**, clonar o projeto e executar os seguintes comandos dentro da pasta "api/"
 - *bundle install*
 - *cucumber -t @pedido* (para executar os testes referente aos endpoints de pedidos)
 - *cucumber -t @pagamento* (para executar os testes referente aos endpoints de pagamentos)
