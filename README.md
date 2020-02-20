@@ -20,6 +20,8 @@ Para executar os testes da API deve-se possuir instalado o **Ruby**, **Bundle**,
 - *cucumber -t @pagamento* (para executar os testes referente aos endpoints de pagamentos)
 - *cucumber* (para executar testes tanto de pedidos, quanto de pagamentos)
 
+**_Observações: A execução dos testes gera um relatório de report em HTML dentro de api/log. Facilita na visualização dos cenários executados, e se deram certo (verde) ou falharam (vermelho). _**
+
 # ChromeDriver
 - Para rodar os testes de interface, é necessário possuir o ChromeDriver.
 - Verifique a versão do chrome [aqui](https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
