@@ -1,43 +1,29 @@
 Dado("que acesso a pagina de login") do
-    @loginPage.go
+  @loginPage.go
 end
-
 Quando("eu faço login com {string} e {string}") do |login, password|
   @loginPage.logar(login, password)
 end
-
-Então("devo clicar em você é um robo") do
-  @loginPage.clicarRobo
-end
-
-Então("devo ver o logo da wirecard") do
-  expect((@sideBarPage.logo).visible?).to be true
-end
-
 Então("devo ver a mensagem de alerta {string}") do |msgEsperada|
   expect(@loginPage.alert).to have_content msgEsperada
 end
-
-Então("devo clicar em pedidos") do
+Dado("que sou um usuário logado") do
+    @loginPage.go
+    @loginPage.logar("gbl_marcelino@hotmail.com", "gbl69gbl")
+    expect((@sideBarPage.logo).visible?).to be true
+end
+Quando("busco o id do pedido {string}") do |pedido|
   @loginPage.clicarPedido
-end
-
-Então("devo inserir o codigo {string} do pedido") do |codigo|
-  @loginPage.inserirCodigo(codigo)
-end
-
-Então("devo cliclar em buscar") do
+  @loginPage.inserirCodigo(pedido)
   @loginPage.clickBuscar
 end
-
 Então("devo verificar se o pedido é {string}") do |pedido|
-  expect("123abc").to eq(pedido)
+  expect(pedido).to eq("123abc")
 end
-
 Então("devo verificar se valor total é {string}") do |total|
-  expect("R$73,00").to eq(total)
+  sleep 5
+  expect(total).to eq("R$73,00")
 end
-
 Então("devo verificar se comprador é {string}") do |comprador|
-  expect("João Silva").to eq(comprador)
+  expect(comprador).to eq("João Silva")
 end

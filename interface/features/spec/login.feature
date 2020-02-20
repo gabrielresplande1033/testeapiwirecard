@@ -3,14 +3,10 @@
 Funcionalidade: Buscar Pedido
     
 
-    @buscarPedido
+     @buscarPedido
     Cenario: Acesso
-        Dado que acesso a pagina de login
-        Quando eu faço login com "gbl_marcelino@hotmail.com" e "gbl69gbl"
-        Então devo ver o logo da wirecard
-        Então devo clicar em pedidos
-        Então devo inserir o codigo "ORD-5VUV321HVHO6" do pedido
-        Então devo cliclar em buscar
+        Dado que sou um usuário logado
+        Quando busco o id do pedido "ORD-5VUV321HVHO6"
         Então devo verificar se o pedido é "123abc"
         Então devo verificar se valor total é "R$73,00"
         Então devo verificar se comprador é "João Silva"
