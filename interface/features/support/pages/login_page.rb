@@ -11,12 +11,12 @@ class LoginPage
         find('input[name=password').set password
 
         click_button 'Acessar sua conta'
-        
-
        
     end
 
     def clicarPedido
+        sleep 1
+        click_on(class: 'close')
         find('#tour-pedidos').click
     end
 
@@ -27,8 +27,6 @@ class LoginPage
     end
 
     def clickBuscar
-        sleep 1
-        click_on(class: 'close')
         click_link 'Buscar'
     end
 
