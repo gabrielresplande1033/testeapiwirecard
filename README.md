@@ -34,7 +34,7 @@ Para executar os testes da API deve-se possuir instalado o **Ruby**, **Bundle**,
 Para executar os testes de Interface deve-se possuir instalado o **Ruby**, **Bundle**, **ChromeDriver**, clonar o projeto e executar os seguintes comandos dentro da pasta "interface/"
 - *bundle install*
 - *cucumber -t @buscarpedido* (para executar os testes referente a busca de pedidos)
-- *cucumber -t @loginFail* (para executar os testes referente as falhas de login)
+- *cucumber -t @loginFail* (para executar os testes referente as falhas de login) (recomendo rodar por ultimo por conta do problema comentado nas observações)
 - *cucumber* (para executar testes referente a busca de pedido, e falhas no login)
 
 *Observações: Alguns empecilhos quanto ao teste de interface, por conta da inconstância dos **alerts** da aplicação. Outro problema quanto
