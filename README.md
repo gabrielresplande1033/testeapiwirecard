@@ -29,7 +29,7 @@ Para executar os testes da API deve-se possuir instalado o **Ruby**, **Bundle**,
 
 # Como executar os testes de Interface
 
-Para executar os testes de Interface deve-se possuir instalado o **Ruby(2.4.0)**, **Bundle(2.1.4)**, [chromedriver](https://chromedriver.chromium.org/downloads), clonar o projeto e executar os seguintes comandos dentro da pasta "interface/"
+Para executar os testes de Interface deve-se possuir instalado o **Ruby**, **Bundle**, **ChromeDriver**, clonar o projeto e executar os seguintes comandos dentro da pasta "interface/"
 - *bundle install*
 - *cucumber -t @buscarpedido* (para executar os testes referente a busca de pedidos)
 - *cucumber -t @loginFail* (para executar os testes referente as falhas de login)
