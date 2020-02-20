@@ -37,6 +37,8 @@ Realizando alguns testes manuais na [aplicação web](https://conta-sandbox.wire
 - Ajustar a busca para que seja possível buscar um pedido pelo **OwnId**, atualmente apenas a busca pelo **Id** retorna o resultado
 - Alguns elementos HTML da aplicação Web não possuem Id, ou possuem Ids na pagina repetidos, ou o nome do Id não é intuitivo, como por
 exemplo o **input** da busca de pedidos, cujo id é apenas a letra **"q"**, isso dificulta na criação de testes automatizados para interface
+![Screenshot_20200220_044730](https://user-images.githubusercontent.com/32210024/74916424-36589500-539c-11ea-93b9-d93b490a7ac9.png)
+
 
 # Considerações finais
 Esse projeto tem como principal objetivo a avaliação do processo seletivo da Wirecard para a vaga de Analista de Testes / Qualidade de software.
