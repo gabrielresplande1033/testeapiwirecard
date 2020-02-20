@@ -35,10 +35,11 @@ end
 
 Então("a API irá retornar os dados do pedido correspondente respondendo o código {int}") do |int|
   expect($get.code).to eq(int)
-  puts "Code Get: #{$get.code}"
+  expect($get["id"]).to eq($response["id"])
+  expect($get["ownId"]).to eq($response["ownId"])
+  expect($get["customer"]["fullname"]).to eq($response["customer"]["fullname"])
+  expect($get["items"][0]).to eq($response["items"][0])
   expect($get.message).to eq("OK")
-  puts "ID Get: #{$get["id"]}"
-  puts "Message Get: #{$get.message}"
   expect($get["id"]).to eq($response["id"])
 end
 
@@ -50,10 +51,7 @@ Quando("realizar uma requisição passando o ID do Pagamento") do
 end
 
 Então("a API irá retornar os dados do pagamento correspondente constando o código {int}") do |statusGetPagamento|
-  puts "Pagamento ID: #{$getPagamento["ID"]}"
   expect($getPagamento.code).to eq(statusGetPagamento)
-  puts "Pagamento GetMessage: #{$getPagamento.message}"
-  puts "Pagamento code: #{$getPagamento.code}"
 end
 
 Dado("que tenho um pedido cadastrado") do
@@ -87,5 +85,5 @@ Quando("realizar uma requisição para inserir um pagamento que já existe") do
 end
 
 Então("a API responderá com o seguinte erro {string}") do |string|
-  puts $responsePagamentoInserido
+
 end

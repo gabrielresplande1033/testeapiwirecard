@@ -13,14 +13,16 @@ class LoginPage
         click_button 'Acessar sua conta'
         click_on(class: 'close')
 
+       
     end
 
     def clicarPedido
         find('#tour-pedidos').click
-        click_link 'Continuar'
     end
 
     def inserirCodigo(codigo)
+        sleep 3
+        click_on(class: 'joyride-close-tip')
         find("input[placeholder='Buscar por pedido ou comprador']").set codigo
     end
 
