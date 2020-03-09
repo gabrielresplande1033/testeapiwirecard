@@ -85,5 +85,5 @@ Quando("realizar uma requisição para inserir um pagamento que já existe") do
 end
 
 Então("a API responderá com o seguinte erro {string}") do |string|
-
+  expect($responsePagamentoInserido["errors"][0]["description"])
 end
